@@ -13,7 +13,7 @@ body {
   color: #e97e1c;
 }
 
-h1, h2 {
+h1, h2, h3 {
   font-family: 'Righteous', cursive;
   text-shadow: 2px 2px #170e10;
 }
@@ -40,6 +40,14 @@ h1 {
    text-align: center;
 }
 
+h3 {
+  font-size: 2rem;
+  letter-spacing: 2px;
+  padding: 1% 1%;
+  text-align: center;
+  visibility: hidden;
+}
+
 .player-heading {
   font-size: 3rem;
   letter-spacing: 4px;
@@ -55,9 +63,36 @@ h1 {
 }
 
 .image-dice {
+  animation-name: throwingAnimation;
+  animation-timing-function: linear;
+  animation-duration: 2.5s;
   border: 10px solid #9dd7ce;
   border-radius: 17%;
-  width: 150px;
+  width: 250px;
+}
+
+@keyframes throwingAnimation {
+  15% {
+    transform: rotate(-35deg);
+    /* transform: translate(-5px, -2px); */
+  }
+  30% {
+    transform: rotate(35deg);
+    /* transform: translate(5px, 2px); */
+  }
+  45% {
+    transform: rotate(-35deg);
+    /* transform: translate(-5px, -2px); */
+  }
+  60% {
+    transform: rotate(35deg);
+    /* transform: translate(5px, 2px); */
+  }
+  75% {
+    transform: rotate(-35deg);
+    transform: scale(1.5);
+  }
+
 }
 
 .art {
