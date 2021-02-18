@@ -34,11 +34,11 @@ let throwing = setInterval(function () {
 setTimeout(function () {
   clearInterval(throwing);
   if (playerOneScore > playerTwoScore) {
-    title.innerHTML = "Player One wins!";
+    title.innerHTML = "🏆 Player One wins!";
   } else if (playerOneScore === playerTwoScore){
-    title.innerHTML = "Draw ¯\_(ツ)_/¯";
+    title.innerHTML = "Draw ¯\\_(ツ)_/¯";
   } else {
-    title.innerHTML = "Player Two wins!";
+    title.innerHTML = "Player Two wins! 🏆";
   }
   refresh.style.visibility = "visible";
 }, 2000);
